@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/menu_show_all"
+        android:title="Show all"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/menu_active_case"
+        android:title="Number of active cases"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/menu_death"
+        android:title="Number of deaths"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/menu_active_case_per_hab"
+        android:title="Active cases for 100k hab"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/menu_death_case_per_hab"
+        android:title="Death cases for 100k hab"
+        tools:ignore="HardcodedText" />
+
+</menu>

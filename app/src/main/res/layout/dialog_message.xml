@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/size_16dp"
+    android:paddingBottom="@dimen/size_16dp">
+
+    <View
+        android:id="@+id/view_separator"
+        android:layout_width="@dimen/size_80dp"
+        android:layout_height="@dimen/size_4dp"
+        android:layout_marginTop="@dimen/size_32dp"
+        android:background="@color/grey" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_24dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_20sp"
+        android:textStyle="bold"
+        tools:text="Title" />
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_16dp"
+        android:textColor="@color/dark_grey"
+        android:textSize="@dimen/text_14sp" />
+
+    <Button
+        android:id="@+id/btn_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_24dp"
+        android:background="@drawable/bg_primary_corner_radius"
+        android:elevation="@dimen/size_2dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        tools:text="First button" />
+
+    <Button
+        android:id="@+id/btn_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_8dp"
+        android:background="@drawable/bg_primary_stroke_corner_radius"
+        android:elevation="@dimen/size_2dp"
+        android:textAllCaps="false"
+        android:textColor="@color/color_primary"
+        android:textStyle="bold"
+        tools:text="First button" />
+
+</LinearLayout>
