@@ -85,6 +85,9 @@ class DetailActivity : BaseActivity() {
         barChartTitle: List<String>
     ) = with(binding) {
         barChart.data = barData
+        barChart.description.isEnabled = false
+        barChart.setDrawGridBackground(false)
+
         val xAxis = barChart.xAxis
         xAxis.apply {
             valueFormatter = IndexAxisValueFormatter(barChartTitle)
@@ -92,11 +95,13 @@ class DetailActivity : BaseActivity() {
             position = XAxis.XAxisPosition.BOTTOM
             granularity = 1.0F
             isGranularityEnabled = true
+            setDrawGridLines(false)
+            setDrawAxisLine(false)
         }
         barData.barWidth = 0.10F
         barChart.apply {
             axisLeft.axisMinimum = 0F
-            groupBars(0F, 0.44F, 0.10F)
+            groupBars(0F, 0.3F, 0.10F)
             invalidate()
         }
     }
