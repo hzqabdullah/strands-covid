@@ -11,7 +11,7 @@ enum class QuarterOfYear {
     TWO {
         override fun getQuarterDate() = "06-30"
         override fun getQuarterLabel() = "Quarter 2"
-        override fun getQuarterColor() = Color.BLUE
+        override fun getQuarterColor() = Color.MAGENTA
     },
     THREE {
         override fun getQuarterDate() = "09-30"
@@ -21,7 +21,7 @@ enum class QuarterOfYear {
     FOUR {
         override fun getQuarterDate() = "12-30"
         override fun getQuarterLabel() = "Quarter 4"
-        override fun getQuarterColor() = Color.GRAY
+        override fun getQuarterColor() = Color.CYAN
     };
 
     abstract fun getQuarterDate(): String

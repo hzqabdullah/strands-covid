@@ -96,11 +96,13 @@ class DetailActivity : BaseActivity() {
             granularity = 1.0F
             isGranularityEnabled = true
             setDrawGridLines(false)
-            setDrawAxisLine(false)
         }
         barData.barWidth = 0.10F
         barChart.apply {
             axisLeft.axisMinimum = 0F
+            axisLeft.setDrawGridLines(false)
+            axisRight.axisMinimum = 0F
+            axisRight.setDrawGridLines(false)
             groupBars(0F, 0.3F, 0.10F)
             invalidate()
         }
